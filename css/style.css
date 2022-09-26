@@ -358,17 +358,149 @@ transition: 1s ease;
   .blog  .view-all:hover{
     color: #FEB700;
   }
+  .blog  svg{
+    margin-left: 10px;
+  }
 
 
 
 
 /* -- ------------------------------------blog end---------------------------------------------- -- */
 
-/* img.vert-move {
-    -webkit-animation: mover 2.5s infinite  alternate;
-    animation: mover 1s infinite  alternate;
-} */
-  img.vert-move {
+
+
+
+
+
+
+/* -- ------------------------------------testimonial start---------------------------------------------- -- */
+
+
+.testimonial{
+    padding-top: 150px;
+    padding-bottom: 100px;
+    background-color: #212121; 
+}
+.testimonial .testimonial-cards .card{
+    background-color: #252323;
+    width: 400px;
+    border-radius: 27px;
+}
+.testimonial .testimonial-cards .card img{
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin-top: -10px
+}
+.testimonial .testimonial-cards .testimonial-card-bg{
+    background-color: #4d3a0a;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    width: 400px;
+    border-radius: 27px
+}
+.testimonial .testimonial-cards .testimonial-card-bg .testimonial-img-bg{
+    border-radius: 50%;
+    background-color: rgb(83, 76, 76);
+    margin: 0 auto;
+    height: 80px;
+    width: 80px;
+    position: absolute;
+}
+.testimonial .testimonial-cards .card .designation{
+    margin-top: -10px;
+}
+
+
+/* -- ------------------------------------testimonial end---------------------------------------------- -- */
+
+
+
+
+
+
+/* -- ------------------------------------team start---------------------------------------------- -- */
+
+.team{
+    padding-top: 150px;
+    padding-bottom: 100px;
+    background-color: #212121; 
+}
+.team .team-cards .card{
+    background-color: #1F1F1F;
+    width: 300px;
+    border-radius: 27px;
+}
+.team .team-cards .card p{
+    color: #FEB700;
+}
+.team .team-cards .card img{
+    width: 180px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+.team .team-cards .card .team-card-img-bg{
+    background-color: #725713;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    
+}
+.team .team-cards .card .social-icons a {
+    margin: 0 auto;
+    color: rgb(255, 255, 255);
+    font-weight: 25px;
+}
+.team .team-cards .card .team-card-img-bg-1{
+    /* background-color: rgb(255, 255, 255); */
+    width: 205px;
+    height: 205px;
+    margin: 0 auto;
+    border-radius: 50%;
+    transition: 0.3s ease;
+}
+.team .team-cards .card .social-icons a:hover{
+    color: #725713;
+}
+
+
+/* -- ------------------------------------team end------------------------------------------------ */
+
+
+.contact{
+    background-color: #2B2828;
+}
+.contact form{
+    background-color: #302E2E;
+    width: 400px;
+    padding: 30px;
+    border-radius: 27px;
+}
+.contact form input, .contact form textarea{
+    background-color: #343434;
+    border: 0;
+    border-radius: 30px;
+    font-size: 13px;
+    padding: 15px;
+}
+.contact form button{
+    background-color: #8f6b10;
+    border: 0;
+    border-radius: 27px;
+    padding: 8px 20px;
+}
+.contact form button:hover{
+    opacity: 0.6;
+}
+
+/* -- ------------------------------------move-up-animation start----------------------------------------------- */
+
+img.vert-move {
     -webkit-animation: mover 2.5s infinite  alternate;
     animation: mover 2.5s infinite  alternate;
 }
@@ -381,102 +513,6 @@ transition: 1s ease;
     100% { transform: translateY(-25px); }
 }
 
+/* -- ------------------------------------move-up-animation end------------------------------------------------ */
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  .our-team {
-    padding: 1.2rem 0.75rem;
-    background: #fff;
-    border-radius: 1rem;
-    text-align: center;
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 10px 0px,
-     rgba(0, 0, 0, 0.5) 0px 2px 25px 0px;
-  }
-  .our-team .pic {
-    display: inline-block;
-    width: 100%;
-    height: 100%;
-    background: #fff;
-    padding: 0.75rem;
-    margin-bottom: 1.5rem;
-    transition: all 0.5s ease 0s;
-  }
-  .our-team:hover .pic {
-    background: #FEB700;
-    border-radius: 50%;
-  }
-  .pic img {
-    width: 100%;
-    height: auto;
-    border-radius: 50%;
-  }
-  .our-team .title {
-    display: block;
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: #FEB700;
-    margin: 0 0 7px 0;
-  }
-  .our-team .post {
-    display: block;
-    font-size: 1rem;
-    color: #FEB700;
-    margin-bottom: 1rem;
-  }
-  .our-team .social {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-  }
-  .our-team .social li {
-    display: inline-block;
-    margin-right: 5px;
-  }
-  .our-team .social li a {
-    display: block;
-    width: 2rem;
-    height: 2rem;
-    line-height: 2rem;
-    border-radius: 50%;
-    font-size: 1rem;
-    color: #60c5a8;
-    border: 1px solid #FEB700;
-    transition: all 0.5s ease 0s;
-  }
-  .our-team:hover .social li a {
-    background: #60c5a8;
-    color: #fff;
-  }
-  
-  .social li a:hover {
-    background-color: #025784 !important;
-    border: none;
-    text-decoration: none;
-  }
-  .our-team .team-img-bg {
-    background-color: red;
-    padding: 10px;
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-  }
-  
-  @media only screen and (max-width: 992px) {
-    .our-team {
-      margin-bottom: 2rem;
-    }
-  }
-  
