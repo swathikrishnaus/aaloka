@@ -1,4 +1,4 @@
-body{
+/* body{
     font-size: 14px;
     font-family: 'Poppins';
 }
@@ -12,7 +12,7 @@ body{
 }
 .navbar .nav-item .nav-link:hover, .navbar .nav-item .nav-link:focus, .navbar .nav-item .nav-link.active{
     font-weight: bold;
-}
+} */
 
 
 
@@ -412,6 +412,21 @@ transition: 1s ease;
 .testimonial .testimonial-cards .card .designation{
     margin-top: -10px;
 }
+.testimonial .testimonial-carousel{
+    margin-top: 50px;
+}
+.testimonial .testimonial-carousel button.active{
+    width: 35px;
+    border-radius: 50%;
+}
+.testimonial .testimonial-carousel button{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+.testimonial .testimonial-cards{
+    margin-bottom: 60px;
+}
 
 
 /* -- ------------------------------------testimonial end---------------------------------------------- -- */
@@ -427,6 +442,7 @@ transition: 1s ease;
     padding-top: 150px;
     padding-bottom: 100px;
     background-color: #212121; 
+    justify-content: center;
 }
 .team .team-cards .card{
     background-color: #1F1F1F;
@@ -456,6 +472,11 @@ transition: 1s ease;
     color: rgb(255, 255, 255);
     font-weight: 25px;
 }
+.team .team-carousel{
+    margin-top: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
 .team .team-cards .card .team-card-img-bg-1{
     /* background-color: rgb(255, 255, 255); */
     width: 205px;
@@ -467,17 +488,37 @@ transition: 1s ease;
 .team .team-cards .card .social-icons a:hover{
     color: #725713;
 }
+.team  #carousel-indicators{
+    display: none;
+}
+/* .team .team-carousel .carousel-control-prev{
+    position: absolute;
+    left: 0;
+} */
+.team .team-carousel .carousel-control-prev{
+    margin-left: -50px;
+    margin-right: 50px;
+}
+
 
 
 /* -- ------------------------------------team end------------------------------------------------ */
 
 
+
+
+/* -- ------------------------------------contact start------------------------------------------------ */
+
+
 .contact{
+    padding-top: 150px;
+    padding-bottom: 150px;
     background-color: #2B2828;
 }
 .contact form{
     background-color: #302E2E;
-    width: 400px;
+    /* width: 400px; */
+    width: 70%;
     padding: 30px;
     border-radius: 27px;
 }
@@ -485,6 +526,7 @@ transition: 1s ease;
     background-color: #343434;
     border: 0;
     border-radius: 30px;
+    color: rgb(190, 182, 182);
     font-size: 13px;
     padding: 15px;
 }
@@ -492,11 +534,269 @@ transition: 1s ease;
     background-color: #8f6b10;
     border: 0;
     border-radius: 27px;
-    padding: 8px 20px;
+    padding: 10px 25px;
 }
 .contact form button:hover{
     opacity: 0.6;
 }
+.contact .contact-img{
+    margin-top: 60px;
+}
+.contact  .card{
+    background-color: #302e2e;
+    border: 0;
+    border-radius: 27px;
+    height: 200px;
+}
+.contact  .card a{
+    text-decoration: none;
+}
+.contact  .card a:hover{
+    color: #FEB700;
+}
+.contact  .card .contact-address-bg{
+    padding: 30px;
+    height: 100%;
+    background-color: rgb(61, 60, 60);
+    border-radius: 27px;
+    /* padding-bottom: 50px; */
+    
+}
+.contact  .card .contact-address-bg .social-media{
+    justify-content: center;
+}
+.contact  .card .contact-address-bg .social-media img{
+    width: 20px;
+    height: auto;
+    margin-right: 20px;
+    transition: 0.3s ease;
+}
+.contact  .card .mail img{
+    /* margin-bottom: -65px; */
+    width: 50px;
+    height: auto;
+    opacity: 0.5;
+    /* margin-top: 10px; */
+}
+
+
+/* -- ------------------------------------contact end------------------------------------------------ */
+
+
+
+.wrapper{position:relative;width:2000px;}
+
+
+.div{position:relative;display:inline-block;margin-left:-23px;width:140px;height:200px;border-radius:50%;border-left:16px solid navy;overflow:hidden;box-shadow:inset 14px 0 0 1px skyblue, inset 28px 0 0 1px navy, inset 42px 0 0 1px skyblue, inset 56px 0 0 1px navy;
+transform-style:preserve-3d;perspective-origin:800px;
+animation:anim 4s infinite ease-in-out;
+}
+
+.div:nth-child(n){transform:rotate(90deg);top:0px;}
+.div:nth-child(2n){transform:rotate(-90deg);top:46px;}
+
+@keyframes anim{
+	0%,100%{height:140px;margin-left:-23px;}
+	50%{height:200px;margin-left:32px;}
+}
+.anim{animation:anim 1s infinite ease-in-out;}
+
+
+
+
+
+
+/* -- ------------------------------------about-page start------------------------------------------------ */
+
+
+.about-page{
+    padding-top: 150px;
+    padding-bottom: 150px;
+    background-position: center;
+    background-size: cover;
+    background-image: url("C:/Works/Websites/aaloka/images/about/2.jpg")
+    
+}
+
+.about-content-1{
+    padding: 30px;
+    /* background-color: rgb(255, 202, 27); */
+    background-color: #393630;
+
+    border-radius: 27px;
+    margin-top: 240px;
+    width: 350px;
+    right: 0;
+    position: absolute;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+.about-page .about-column{
+    position: relative;
+}
+.about-page .about-bg  img{
+    width: 500px;
+    height: auto;
+    margin-top: -50px;
+}
+.about-page .bg-1{
+    width: 300px;
+    height: auto;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.about-customer-carousel{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #444440; 
+ }
+ .about-customer-carousel img{
+    width: 200px;
+    height: auto;
+    margin-bottom: 60px;
+ }
+ .about-customer-carousel button.active{
+    width: 35px;
+    border-radius: 50%;
+}
+.about-customer-carousel button{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.story-contents {
+    margin-top: 50px;
+}
+.story{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #3a3a37; 
+}
+.story .story-img img{
+    width: 250px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 27px;
+}
+
+/* -- ------------------------------------about-page end------------------------------------------------ */
+
+
+
+
+/* -- ------------------------------------footer start------------------------------------------------ */
+
+.footer{
+    padding-top: 150px;
+    padding-bottom: 100px;
+    background-color: #626262; 
+}
+.footer .footer-logo{
+    width: 500px;
+    height: auto;
+}
+.footer  form input{
+    background-color: #4E4E4E;
+    height: 65px;
+    width: 500px;
+    color: rgb(185, 179, 179);
+    border: 0;
+    border-radius: 30px;
+}
+.footer  form  button{
+    width: 300px;
+    height: 65px;
+    margin-left: -50px;
+    border: 0;
+    background-color: #FEB700;
+    border-radius: 30px;
+    border: 0;
+}
+
+  .footer .footer-service-links {
+    margin: 0 auto;
+    justify-content: center;
+    
+    margin-top: 60px;
+  }
+  .footer .footer-service-links a{
+    padding: 20px;
+    text-decoration: none;
+    color: rgb(236, 229, 229);
+    transition: 0.3s ease;
+  }
+  .footer .footer-service-links a:hover{
+    color: #FEB700;
+  }
+
+
+
+
+  .footer .footer-quick-links {
+    margin: 0 auto;
+    justify-content: center;
+    
+    margin-top: -15px;
+  }
+  .footer .footer-quick-links a{
+    padding: 20px;
+    text-decoration: none;
+    color: rgb(236, 229, 229);
+    transition: 0.3s ease;
+  }
+  .footer .footer-quick-links a:hover{
+    color: #FEB700;
+  }
+    /* .footer-logos{
+        margin-top: 20px;
+    } */
+    .footer-logos i{
+        padding: 10px;
+        font-size: 20px;
+        color: #FEB700;
+        transition: 0.3s ease;
+    }
+    .footer-logos i:hover{
+        color: white;
+    }
+  
+  
+  @media(max-width: 991px){
+    .footer .footer-service-links{
+        flex-wrap: wrap;
+    }
+    .footer  form input{
+        width: 300px;
+    }
+    .footer  form  button{
+        width: 120px;
+    }
+
+    .footer .footer-quick-links{
+        flex-wrap: wrap;
+    }
+  }
+
+  
+
+
+
+/* -- ------------------------------------footer end------------------------------------------------ */
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* -- ------------------------------------move-up-animation start----------------------------------------------- */
 
