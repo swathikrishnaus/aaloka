@@ -22,8 +22,10 @@
         <nav class="navbar navbar-expand-lg navbar-light yellow-bg pt-4 fixed-top">
             <div class="container">
               <a class="navbar-brand" href="#"><img src="images/aaloka-logo.png" alt=""></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+              <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="toggler-icon top-bar"></span>
+                <span class="toggler-icon middle-bar"></span>
+                <span class="toggler-icon bottom-bar"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
@@ -33,7 +35,10 @@
                   <li class="nav-item">
                     <a class="nav-link about-nav active" href="about.html">About</a>
                   </li>
-                  <li class="nav-item dropdown">
+                  <li class="nav-item d-block d-md-none">
+                    <a class="nav-link about-nav" href="services.html">Services</a>
+                  </li>
+                  <li class="nav-item dropdown d-none d-md-block">
                     <a class="nav-link dropdown-toggle service-nav" href="services.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Services
                     </a>
@@ -97,8 +102,8 @@
                     <div class="col-lg-6">
                         <h3 class="text-center fw-bold text-white text-uppercase ">Let's know more about US   </h3>
                         <img src="images/underline.png" alt="" class="img-fluid underline">
-                        <p class="content-color">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis luctus lacinia nulla pellentesque mollis. Aenean convallis ligula vitae leo efficitur, a accumsan augue eleifend. Sed vitae orci molestie mi gravida varius id ac est. Nullam posuere viverra blandit. Aenean vitae odio est. Quisque ultricies nunc nec lacus imperdiet, quis mattis lacus posuere. Quisque porttitor diam id dictum convallis. Vivamus laoreet nisl volutpat pellentesque suscipit. Ut viverra erat ultrices consectetur elementum. Proin consequat mollis ex, et rutrum ipsum pharetra vitae. Sed blandit dui a dignissim scelerisque. Quisque sit amet lacinia quam. Etiam tempor velit non orci facilisis, sed tempor arcu blandit. Fusce congue cursus scelerisque. Vestibulum tempor leo quis lorem elementum, quis feugiat elit suscipit. Suspendisse interdum, elit at fermentum maximus, elit lorem accumsan erat, vel sagittis ligula nulla et ante. Praesent placerat porttitor turpis, eget gravida ex pharetra id. Fusce imperdiet in lorem ut commodo. Pellentesque et iaculis lectus.. Cras et mattis arcu. Nulla et nisl tortor. Phasellus vitae molestie diam.</p>
-                        <p class="content-color">Curabitur tristique nibh eu sem egestas auctor. Praesent dignissim malesuada accumsan. Integer elementum porttitor vehicula. Nam sollicitudin nisl nulla, id ultricies arcu consectetur eget. Vivamus venenatis hendrerit feugiat. Vestibulum tincidunt interdum commodo. Integer ullamcorper massa vel justo rhoncus, id pulvinar ipsum facilisis. Morbi id facilisis quam, et molestie metus. Morbi semper est et eleifend ornare. Nam mollis porttitor leo, at volutpat neque iaculis at. Nullam porttitor urna sit amet nisi aliquet, vitae mollis dui mattis. Mauris eget dictum turpis. Curabitur posuere magna a urna mollis auctor.</p>
+                        <div class="about-para-explain"><p class="content-color">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis luctus lacinia nulla pellentesque mollis. Aenean convallis ligula vitae leo efficitur, a accumsan augue eleifend. Sed vitae orci molestie mi gravida varius id ac est. Nullam posuere viverra blandit. Aenean vitae odio est. Quisque ultricies nunc nec lacus imperdiet, quis mattis lacus posuere. Quisque porttitor diam id dictum convallis. Vivamus laoreet nisl volutpat pellentesque suscipit. Ut viverra erat ultrices consectetur elementum. Proin consequat mollis ex, et rutrum ipsum pharetra vitae. Sed blandit dui a dignissim scelerisque. Quisque sit amet lacinia quam. Etiam tempor velit non orci facilisis, sed tempor arcu blandit. Fusce congue cursus scelerisque. Vestibulum tempor leo quis lorem elementum, quis feugiat elit suscipit. Suspendisse interdum, elit at fermentum maximus, elit lorem accumsan erat, vel sagittis ligula nulla et ante. Praesent placerat porttitor turpis, eget gravida ex pharetra id. Fusce imperdiet in lorem ut commodo. Pellentesque et iaculis lectus.. Cras et mattis arcu. Nulla et nisl tortor. Phasellus vitae molestie diam.</p>
+                            <p class="content-color">Curabitur tristique nibh eu sem egestas auctor. Praesent dignissim malesuada accumsan. Integer elementum porttitor vehicula. Nam sollicitudin nisl nulla, id ultricies arcu consectetur eget. Vivamus venenatis hendrerit feugiat. Vestibulum tincidunt interdum commodo. Integer ullamcorper massa vel justo rhoncus, id pulvinar ipsum facilisis. Morbi id facilisis quam, et molestie metus. Morbi semper est et eleifend ornare. Nam mollis porttitor leo, at volutpat neque iaculis at. Nullam porttitor urna sit amet nisi aliquet, vitae mollis dui mattis. Mauris eget dictum turpis. Curabitur posuere magna a urna mollis auctor.</p></div>
                     </div>
                 </div>
             
@@ -296,7 +301,7 @@
         </div>
         <hr>
         <div class="footer-powered">
-            <p class="content-color text-center">Powered By <a href="" class="yellow-color">TrickyDot Technologies</a></p>
+            <p class="content-color text-center">Powered By <a href="https://trickydot.com/" class="yellow-color">TrickyDot Technologies</a></p>
         </div>
 
     </section>

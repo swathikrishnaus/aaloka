@@ -22,8 +22,10 @@
         <nav class="navbar navbar-expand-lg navbar-light yellow-bg pt-4 fixed-top">
             <div class="container">
               <a class="navbar-brand" href="#"><img src="images/aaloka-logo.png" alt=""></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+              <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="toggler-icon top-bar"></span>
+                <span class="toggler-icon middle-bar"></span>
+                <span class="toggler-icon bottom-bar"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
@@ -33,7 +35,10 @@
                   <li class="nav-item">
                     <a class="nav-link about-nav" href="about.html">About</a>
                   </li>
-                  <li class="nav-item dropdown">
+                  <li class="nav-item d-block d-md-none">
+                    <a class="nav-link about-nav" href="services.html">Services</a>
+                  </li>
+                  <li class="nav-item dropdown d-none d-md-block">
                     <a class="nav-link dropdown-toggle service-nav" href="services.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Services
                     </a>
@@ -228,7 +233,7 @@
         </div>
         <hr>
         <div class="footer-powered">
-            <p class="content-color text-center">Powered By <a href="" class="yellow-color">TrickyDot Technologies</a></p>
+            <p class="content-color text-center">Powered By <a href="https://trickydot.com/" class="yellow-color">TrickyDot Technologies</a></p>
         </div>
 
     </section>
