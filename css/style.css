@@ -1058,7 +1058,7 @@ transition: 1s ease;
     padding-bottom: 150px;
     background-position: center;
     background-size: cover;
-    background-image: url("C:/Works/Websites/aaloka/images/about/2.jpg")
+    background-image: url("../images/about/2.jpg");
 }
 .about-para-explain{
     padding: 15px;
